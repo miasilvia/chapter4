@@ -38,6 +38,37 @@ function hitungBiayaParkir(lamaParkir, hari, liburNasional){
     }
     return biaya;
 }
-console.log(hitungBiayaParkir(7,"minggu",true));
+console.log(hitungBiayaParkir(6,"minggu",true));
 
-console.log("-------------------------Soal Latihan: Penentuan Biaya Parkir----------------------")
+console.log("-------------------------Soal Latihan: Penjadwalan Acara Festival----------------------------------")
+
+function jadwalFestival(hari, cuaca, suhu, angin) {
+    let hasil="Daftar Acara: ";
+    
+if(true){
+    hasil += "Pameran Seni";
+    }
+if (cuaca == "Hujan" && angin >= 20){
+    hasil += ", semua acara di luar ruangan akan dibatalkan";
+}
+if(cuaca == "Hujan" && angin <=20){
+    hasil += ", acara di dalam ruangan";
+    }
+if(suhu < 5 ){
+    hasil += ", acara indor";
+}
+if(cuaca == "Cerah" && suhu > 25){
+    hasil += ", pesta eskrim";
+}
+if(hari == "Minggu" && cuaca == "Cerah"){
+    hasil += ", maraton senja";
+}
+
+return hasil;
+}
+console.log(jadwalFestival('Sabtu', 'Hujan', 23, 30));
+// Output: Daftar Acara: Pameran Seni.
+console.log(jadwalFestival('Sabtu', 'Hujan', 23, 10));
+// Output: Daftar Acara: Pameran Seni, Acara Dalam Ruangan.
+console.log(jadwalFestival('Minggu', 'Cerah', 27, 8));
+// Output: Daftar Acara: Pameran Seni, Pesta Es Krim, Maraton Senja.
