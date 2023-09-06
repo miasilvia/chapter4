@@ -44,14 +44,16 @@ console.log("-------------------------Soal Latihan: Penjadwalan Acara Festival--
 
 function jadwalFestival(hari, cuaca, suhu, angin) {
     let hasil="Daftar Acara: ";
-    
+if(typeof hari !== "string" || typeof cuaca !== "string" || typeof suhu !== "number" || typeof angin !== "number"){
+        return "Input wrong";
+    }    
 if(true){
     hasil += "Pameran Seni";
     }
 if (cuaca == "Hujan" && angin >= 20){
     hasil += ", semua acara di luar ruangan akan dibatalkan";
 }
-if(cuaca == "Hujan" && angin <=20){
+if(cuaca == "Hujan" && angin <20){
     hasil += ", acara di dalam ruangan";
     }
 if(suhu < 5 ){
