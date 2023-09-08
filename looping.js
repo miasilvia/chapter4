@@ -34,6 +34,17 @@
     
 
  */
+console.log("----------------------SOAL Pola Segitiga Bilangan")
+let n=5;
+let row = "";
+for(let pola = 1; pola <=n; pola++){
+  if(row !==""){
+    row += "*"
+  }
+  row += pola;
+  console.log(row);
+}
+
 console.log("----------------------SOAL BINTANG DIAMOND for didalam for------------------------------")
 let bintang3="";
 for (let i = 0; i<4; i++){
@@ -61,8 +72,8 @@ for (let i = 1; i<=5; i++){
   for(let l=5-1 ; l>=i; l--){
     bintang4 += "*"
   }
-  bintang4 += "\n"
- 
+  bintang4 += "\n";
+  
 }
 console.log(bintang3 + bintang4)
 
@@ -74,14 +85,14 @@ let spasi2=""
 while(kondisi <= 10){
   kondisi++;
   if(kondisi <= 5 ){
-    spasi = spasi.substring(0, spasi.length - 1);
+    spasi = spasi.substring(0, spasi.length - 1); //spasi akn dikurangi 1 setiap barisnya
     bintang += "*" 
   console.log(spasi+bintang+bintang.substring(0, bintang.length - 1));
 }
 
 else if(kondisi > 5){
   spasi2 += " "
-  bintang = bintang.substring(0, bintang.length - 1);
+  bintang = bintang.substring(0, bintang.length - 1); // bintang akan dikurangi 1 setiap barisnya
  
   console.log(spasi2+bintang+bintang.substring(0, bintang.length - 1))
 }
