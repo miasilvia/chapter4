@@ -34,7 +34,7 @@
     
 
  */
-console.log("----------------------SOAL BINTANG DIAMOND------------------------------")
+console.log("----------------------SOAL BINTANG DIAMOND for didalam for------------------------------")
 let bintang3="";
 for (let i = 0; i<4; i++){
   for(let j=5 - 1; j>=i; j--){
@@ -65,3 +65,27 @@ for (let i = 1; i<=5; i++){
  
 }
 console.log(bintang3 + bintang4)
+
+console.log("-----------------SOAL BINTANG DIAMOND looping menggunaan if else--------------------");
+let kondisi=0
+let bintang =""
+let spasi="     "
+let spasi2=""
+while(kondisi <= 10){
+  kondisi++;
+  if(kondisi <= 5 ){
+    spasi = spasi.substring(0, spasi.length - 1);
+    bintang += "*" 
+  console.log(spasi+bintang+bintang.substring(0, bintang.length - 1));
+}
+
+else if(kondisi > 5){
+  spasi2 += " "
+  bintang = bintang.substring(0, bintang.length - 1);
+ 
+  console.log(spasi2+bintang+bintang.substring(0, bintang.length - 1))
+}
+}
+// let str = "Hello World";
+// let newStr = str.substring(0, str.length - 1);
+// console.log(newStr)
