@@ -86,6 +86,9 @@ else if(kondisi > 5){
   console.log(spasi2+bintang+bintang.substring(0, bintang.length - 1))
 }
 }
-// let str = "Hello World";
-// let newStr = str.substring(0, str.length - 1);
-// console.log(newStr)
+
+
+
+let nama="mia silvia";
+console.log("huruf terakhir :", nama.length-1);
+console.log("huruf terakhir :", nama.substring(0,9));
