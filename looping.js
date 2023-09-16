@@ -42,8 +42,12 @@ for(let pola = 1; pola <=n; pola++){
     row += "*"
   }
   row += pola;
-  console.log(row);
+    console.log(row)
+  
 }
+
+
+
 
 console.log("----------------------SOAL BINTANG DIAMOND for didalam for------------------------------")
 let bintang3="";
@@ -97,8 +101,6 @@ else if(kondisi > 5){
   console.log(spasi2+bintang+bintang.substring(0, bintang.length - 1))
 }
 }
-
-
 
 let nama="mia silvia";
 console.log("huruf terakhir :", nama.length-1);

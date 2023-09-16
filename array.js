@@ -206,3 +206,5 @@ const urutan= arrFreq[0]
 
 console.log(arrFreq.sort())
 
+
+  
